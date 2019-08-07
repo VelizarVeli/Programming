@@ -1,0 +1,16 @@
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Intillegio.Data.deps.json
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Intillegio.Data.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\obj\Debug\netcoreapp2.2\Intillegio.Data.csprojAssemblyReference.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\obj\Debug\netcoreapp2.2\Intillegio.Data.csproj.CoreCompileInputs.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\obj\Debug\netcoreapp2.2\Intillegio.Data.AssemblyInfoInputs.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\obj\Debug\netcoreapp2.2\Intillegio.Data.AssemblyInfo.cs
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\obj\Debug\netcoreapp2.2\Intillegio.Data.csproj.CopyComplete
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Intillegio.Data.runtimeconfig.json
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Intillegio.Data.runtimeconfig.dev.json
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Intillegio.Data.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\obj\Debug\netcoreapp2.2\Intillegio.Data.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Data\obj\Debug\netcoreapp2.2\Intillegio.Data.pdb

@@ -1,3 +1,0 @@
-Tolkien -> 40,25
-JKRowling -> 35,50
-OBowden -> 14,00

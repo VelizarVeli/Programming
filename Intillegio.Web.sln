@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intillegio.Web", "Intillegio.Web\Intillegio.Web.csproj", "{F7CAF2D7-BECC-4534-A9EF-6172E9C86719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intillegio.Data", "Intillegio.Data\Intillegio.Data.csproj", "{A9320DF6-0147-4D2B-A358-1B4D21F0BCF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7CAF2D7-BECC-4534-A9EF-6172E9C86719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7CAF2D7-BECC-4534-A9EF-6172E9C86719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7CAF2D7-BECC-4534-A9EF-6172E9C86719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7CAF2D7-BECC-4534-A9EF-6172E9C86719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9320DF6-0147-4D2B-A358-1B4D21F0BCF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9320DF6-0147-4D2B-A358-1B4D21F0BCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9320DF6-0147-4D2B-A358-1B4D21F0BCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9320DF6-0147-4D2B-A358-1B4D21F0BCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E06D6601-9914-46C2-877A-EE9332003096}
+	EndGlobalSection
+EndGlobal
