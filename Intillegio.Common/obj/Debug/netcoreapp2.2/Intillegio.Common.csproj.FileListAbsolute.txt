@@ -1,0 +1,8 @@
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Common\bin\Debug\netcoreapp2.2\Intillegio.Common.deps.json
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Common\bin\Debug\netcoreapp2.2\Intillegio.Common.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Common\bin\Debug\netcoreapp2.2\Intillegio.Common.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.csproj.CoreCompileInputs.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.AssemblyInfoInputs.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.AssemblyInfo.cs
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.pdb

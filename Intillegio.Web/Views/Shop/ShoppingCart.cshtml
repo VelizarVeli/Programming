@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewData["Title"] = "ShoppingCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-title-section" style="background-image:url('@Url.Content("~/img/abstract-red.jpg")');">
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <ul>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a asp-area="" asp-controller="Shop" asp-action="ShoppingCart">Shopping Cart</a></li>
+        </ul>
+    </div>
+</div>
+<div class="section-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-12">
+                <div class="shop-cart-box">
+                    <div class="row bx" id="1">
+                        <div class="col-md-1 col-sm-1 col-12 pr-0">
+                            <div class="button-close">
+                                <a href="#"><i class="icon-cancel"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-12">
+                            <div class="shop-cart-box-img">
+                                <img src="http://via.placeholder.com/95x125" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <div class="shop-cart-box-info">
+                                <h4>Strategies Book</h4>
+                                <span>Bussines Strategies & Advices</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="shop-cart-box-quantity">
+                                <h6>Quantity</h6>
+                                <input class="form-control form-control-sm" type="text" placeholder="Quantity" value="3">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-12">
+                            <div class="shop-cart-box-price">
+                                <h5>$379.00</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row bx" id=2>
+                        <div class="col-md-1 col-sm-1 col-12 pr-0">
+                            <div class="button-close">
+                                <a href="#"><i class="icon-cancel"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-12">
+                            <div class="shop-cart-box-img">
+                                <img src="http://via.placeholder.com/95x125" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <div class="shop-cart-box-info">
+                                <h4>Career Growth</h4>
+                                <span>Bussines Strategies & Advices</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="shop-cart-box-quantity">
+                                <h6>Quantity</h6>
+                                <input class="form-control form-control-sm" type="text" placeholder="Quantity" value="1">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-12">
+                            <div class="shop-cart-box-price">
+                                <h5>$237.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bx" id="3">
+                        <div class="col-md-1 col-sm-1 col-12 pr-0">
+                            <div class="button-close">
+                                <a href="#"><i class="icon-cancel"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-12">
+                            <div class="shop-cart-box-img">
+                                <img src="http://via.placeholder.com/95x125" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-12">
+                            <div class="shop-cart-box-info">
+                                <h4>Annual Report</h4>
+                                <span>Bussines Strategies & Advices</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="shop-cart-box-quantity">
+                                <h6>Quantity</h6>
+                                <input class="form-control form-control-sm" type="text" placeholder="Quantity" value="1">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-12">
+                            <div class="shop-cart-box-price">
+                                <h5>$196.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-12">
+                <div class="shop-cart-info-price clearfix">
+                    <ul class="right-info-price">
+                        <li>Total Price: <h6>$590.00</h6></li>
+                        <li>Shipping Price: <h6>$85.00</h6></li>
+                        <li>Tax: <h6>$30.00</h6></li>
+                    </ul>
+                    <div class="total-price">
+                        <p>Total: <strong>$705.00</strong></p>
+                    </div>
+                </div>
+                <div class="mt-25 right-holder">
+                    <a href="#" class="primary-button button-md">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<partial name="~/Views/Shared/_ClientsCarousel.cshtml" />

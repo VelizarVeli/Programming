@@ -1,23 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Intillegio.Web.Models;
 
 namespace Intillegio.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {
-            return View();
+            return this.View();
+        }
+
+        public IActionResult About()
+        {
+            return this.View();
+        }
+
+        public IActionResult Contact()
+        {
+            return this.View();
+        }
+
+        public IActionResult Faq()
+        {
+            return this.View();
         }
 
         public IActionResult Privacy()
         {
-            return View();
+            return this.View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

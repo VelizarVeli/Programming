@@ -1,0 +1,51 @@
+﻿<nav id="navigation4" class="container navigation">
+    <div class="nav-header">
+        <a class="nav-brand" asp-area="" asp-controller="Home" asp-action="Index">
+            <img src="~/img/logos/logo.png" class="main-logo" alt="logo" id="main_logo">
+        </a>
+        <div class="nav-toggle"></div>
+    </div>
+    <div class="nav-menus-wrapper">
+        <ul class="nav-menu align-to-right">
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="About">About Us</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <ul class="nav-dropdown">
+                    @*TODO: Add foreach with all services from database*@
+                    <li><a asp-area="" asp-controller="Solutions" asp-action="Solutions">Services 01</a></li>
+                    <li><a asp-area="" asp-controller="Solutions" asp-action="Solutions">Services 02</a></li>
+                    <li><a asp-area="" asp-controller="Solutions" asp-action="Solutions">Services 03</a></li>
+                    <li><a asp-area="" asp-controller="Solutions" asp-action="Solutions">Services 04</a></li>
+                    <li><a asp-area="" asp-controller="Solutions" asp-action="Solutions">Services 05</a></li>
+                    <li><a href="cases.html">Cases</a></li>
+                </ul>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Projects" asp-action="Projects">Projects</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Blog" asp-action="Blog">Blog</a>
+            </li>
+            <li>
+                <a href="#">Shop</a>
+                <ul class="nav-dropdown">
+                    <li><a asp-area="" asp-controller="Shop" asp-action="Products">Products</a></li>
+                    <li><a asp-area="" asp-controller="Shop" asp-action="ShoppingCart">Shopping Cart</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+                <ul class="nav-dropdown">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Faq">F.A.Q.</a></li>
+                </ul>
+            </li>
+            <partial name="_LoginPartial" />
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<partial name="~/Views/Blog/PartialViews/_PageTitle.cshtml" />
+
+<div class="section-block">
+    <div class="container">
+        <div class="row">
+            <partial name="~/Views/Blog/PartialViews/_LeftSide.cshtml" />
+            <partial name="~/Views/Blog/PartialViews/_RightSide.cshtml" />
+        </div>
+    </div>
+</div>
+
+<partial name="~/Views/Shared/_ClientsCarousel.cshtml" />

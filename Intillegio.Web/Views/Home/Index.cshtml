@@ -1,8 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    this.ViewData["Title"] = "Home";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/swiper.min.css" asp-append-version="true">
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/slider.css" asp-append-version="true">
+<partial name="~/Views/Home/PartialViews/Index/_MainImageSection.cshtml" />
+<partial name="~/Views/Home/PartialViews/Index/_FeatureBoxesSection.cshtml" />
+<partial name="~/Views/Home/PartialViews/Index/_BackgroundSection.cshtml" />
+<partial name="~/Views/Shared/_ClientsCarousel.cshtml" />
+<partial name="~/Views/Home/PartialViews/Index/_ProjectsSection.cshtml" />
+<partial name="~/Views/Home/PartialViews/Index/_BlogGrid.cshtml" />
+<partial name="~/Views/Home/PartialViews/Index/_NoticeSection.cshtml" />

@@ -1,0 +1,11 @@
+﻿
+@{
+    this.ViewData["Title"] = "Contact";
+}
+<partial name="~/Views/Home/PartialViews/Contact/_PageTitle.cshtml" />
+<partial name="~/Views/Home/PartialViews/Contact/_ContactSection.cshtml" />
+
+@section GoogleMaps{
+    <script src="https://maps.googleapis.com/maps/api/js?" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/google.js" asp-append-version="true"></script>
+}

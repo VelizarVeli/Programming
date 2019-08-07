@@ -1,0 +1,106 @@
+﻿@model Intillegio.Services.Emails.EmailMessage
+<div class="section-block">
+    <div class="container">
+        <div class="section-heading center-holder">
+            <span>Get in Touch</span>
+            <h3>Let's Talk about Your Business</h3>
+            <div class="section-heading-line"></div>
+        </div>
+        <div class="row mt-50">
+            <div class="col-md-6 col-sm-6 col-12">
+                <!-- Map START -->
+                <div id="map" class="mb-20 mt-10">
+                    <input type="button" value="Click to Display Map" onclick="DisplayGoogleMap()" />
+                    <div id="myDiv" style="width:100%;height:400px;"></div>
+                </div>
+                <!-- Map START -->
+            </div>
+            <div class="col-md-6 col-sm-6 col-12">
+                <form asp-controller="Mail" asp-action="SendMessage" class="contact-form">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label asp-for="Subject"></label>
+                                <input asp-for="Subject" id="contactSubject">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <label asp-for="Name"></label>
+                                <input asp-for="Name" id="contactName">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <label asp-for="Content">Message</label>
+                                <textarea asp-for="Content" id="contactMessage"></textarea>
+                                <span asp-validation-for="Content" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="center-holder">
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div class="col-md-4 col-sm-4 col-12">
+                <div class="contact-data-box">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="contact-data-box-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-12">
+                            <div class="contact-data-box-text">
+                                <h4>Phone</h4>
+                                <h6>(+359)89 440 5960</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-12">
+                <div class="contact-data-box">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="contact-data-box-icon">
+                                <i class="fa fa-envelope-open"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-12">
+                            <div class="contact-data-box-text">
+                                <h4>Message</h4>
+                                <h6>office@intillegio.eu</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-12">
+                <div class="contact-data-box">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="contact-data-box-icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-12">
+                            <div class="contact-data-box-text">
+                                <h4>Our Location</h4>
+                                <h6>Rousse, Bulgaria EU 104 Pliska str</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
