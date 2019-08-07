@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using Intillegio.Common;
 using Microsoft.AspNetCore.Authorization;
 using Intillegio.Models;
 using Microsoft.AspNetCore.Identity;
@@ -41,12 +40,16 @@ namespace Intillegio.Web.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+            [StringLength(LengthConstants.MaxLength, MinimumLength = LengthConstants.NameMinLength)]
+            public string Username { get; set; }
+
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(LengthConstants.MaxLength, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = LengthConstants.PasswordMinLength)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
@@ -67,7 +70,7 @@ namespace Intillegio.Web.Areas.Identity.Pages.Account
             returnUrl = returnUrl ?? Url.Content("~/");
             if (ModelState.IsValid)
             {
-                var user = new IntillegioUser { UserName = Input.Email, Email = Input.Email };
+                var user = new IntillegioUser { UserName = Input.Username, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

@@ -7,3 +7,12 @@ C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Se
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Services.pdb
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.dll
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Services.deps.json
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Services.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Services.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.csprojAssemblyReference.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.csproj.CoreCompileInputs.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.AssemblyInfoInputs.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.AssemblyInfo.cs
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.pdb

@@ -19,6 +19,50 @@ namespace Intillegio.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Intillegio.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Category");
+                });
+
+            modelBuilder.Entity("Intillegio.Models.Client", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("About")
+                        .IsRequired();
+
+                    b.Property<string>("Logo")
+                        .IsRequired();
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Clients");
+                });
+
+            modelBuilder.Entity("Intillegio.Models.Feature", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Feature");
+                });
+
             modelBuilder.Entity("Intillegio.Models.IntillegioUser", b =>
                 {
                     b.Property<string>("Id")
@@ -44,7 +88,8 @@ namespace Intillegio.Data.Migrations
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256);
 
-                    b.Property<string>("PasswordHash");
+                    b.Property<string>("PasswordHash")
+                        .HasMaxLength(500);
 
                     b.Property<string>("PhoneNumber");
 
@@ -67,7 +112,57 @@ namespace Intillegio.Data.Migrations
                         .HasName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.ToTable("AspNetUsers");
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Intillegio.Models.Project", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CategoryId");
+
+                    b.Property<Guid>("ClientId");
+
+                    b.Property<string>("Image");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<Guid?>("ProjectId");
+
+                    b.Property<string>("ProjectInfo")
+                        .IsRequired();
+
+                    b.Property<DateTime>("StartingDate");
+
+                    b.Property<int>("Status");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("ClientId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("Projects");
+                });
+
+            modelBuilder.Entity("Intillegio.Models.ProjectFeatures", b =>
+                {
+                    b.Property<Guid>("ProjectId");
+
+                    b.Property<Guid>("FeatureId");
+
+                    b.Property<int>("Id");
+
+                    b.HasKey("ProjectId", "FeatureId");
+
+                    b.HasIndex("FeatureId");
+
+                    b.ToTable("ProjectFeatures");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -136,11 +231,9 @@ namespace Intillegio.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.Property<string>("LoginProvider")
-                        .HasMaxLength(128);
+                    b.Property<string>("LoginProvider");
 
-                    b.Property<string>("ProviderKey")
-                        .HasMaxLength(128);
+                    b.Property<string>("ProviderKey");
 
                     b.Property<string>("ProviderDisplayName");
 
@@ -171,17 +264,45 @@ namespace Intillegio.Data.Migrations
                 {
                     b.Property<string>("UserId");
 
-                    b.Property<string>("LoginProvider")
-                        .HasMaxLength(128);
+                    b.Property<string>("LoginProvider");
 
-                    b.Property<string>("Name")
-                        .HasMaxLength(128);
+                    b.Property<string>("Name");
 
                     b.Property<string>("Value");
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Intillegio.Models.Project", b =>
+                {
+                    b.HasOne("Intillegio.Models.Category", "Category")
+                        .WithMany("Projects")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Intillegio.Models.Client", "Client")
+                        .WithMany("Projects")
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Intillegio.Models.Project")
+                        .WithMany("RelatedProjects")
+                        .HasForeignKey("ProjectId");
+                });
+
+            modelBuilder.Entity("Intillegio.Models.ProjectFeatures", b =>
+                {
+                    b.HasOne("Intillegio.Models.Feature", "Feature")
+                        .WithMany("Projects")
+                        .HasForeignKey("FeatureId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("Intillegio.Models.Project", "Project")
+                        .WithMany("Features")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

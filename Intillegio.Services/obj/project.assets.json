@@ -4268,11 +4268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Services\\Intillegio.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Services\\Intillegio.Services.csproj",
       "projectName": "Intillegio.Services",
-      "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Services\\Intillegio.Services.csproj",
+      "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Services\\Intillegio.Services.csproj",
       "packagesPath": "C:\\Users\\Google\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Services\\obj\\",
+      "outputPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

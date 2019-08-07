@@ -994,9 +994,25 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "Intillegio.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Intillegio.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intillegio.Common.dll": {}
+        }
+      },
       "Intillegio.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Intillegio.Common": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Intillegio.Models.dll": {}
         },
@@ -3718,6 +3734,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "Intillegio.Common/1.0.0": {
+      "type": "project",
+      "path": "../Intillegio.Common/Intillegio.Common.csproj",
+      "msbuildProject": "../Intillegio.Common/Intillegio.Common.csproj"
+    },
     "Intillegio.Models/1.0.0": {
       "type": "project",
       "path": "../Intillegio.Models/Intillegio.Models.csproj",
@@ -3742,11 +3763,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Data\\Intillegio.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Data\\Intillegio.Data.csproj",
       "projectName": "Intillegio.Data",
-      "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Data\\Intillegio.Data.csproj",
+      "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Data\\Intillegio.Data.csproj",
       "packagesPath": "C:\\Users\\Google\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Data\\obj\\",
+      "outputPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3766,8 +3787,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Models\\Intillegio.Models.csproj": {
-              "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Models\\Intillegio.Models.csproj"
+            "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Models\\Intillegio.Models.csproj": {
+              "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Models\\Intillegio.Models.csproj"
             }
           }
         }

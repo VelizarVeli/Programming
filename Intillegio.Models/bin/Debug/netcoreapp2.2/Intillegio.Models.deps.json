@@ -1,17 +1,27 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "signature": "cdab6c6361c07de839f86ce3a6dec053b6f9e438"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "Intillegio.Models/1.0.0": {
         "dependencies": {
+          "Intillegio.Common": "1.0.0",
           "Microsoft.Extensions.Identity.Stores": "2.2.0.0"
         },
         "runtime": {
           "Intillegio.Models.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.5.0": {},
+      "Intillegio.Common/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.5.0"
+        },
+        "runtime": {
+          "Intillegio.Common.dll": {}
         }
       },
       "Microsoft.Extensions.Identity.Stores/2.2.0.0": {
@@ -26,6 +36,18 @@
   },
   "libraries": {
     "Intillegio.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ComponentModel.Annotations/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
+      "path": "system.componentmodel.annotations/4.5.0",
+      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
+    },
+    "Intillegio.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

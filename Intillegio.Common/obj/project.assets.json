@@ -792,11 +792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Common\\Intillegio.Common.csproj",
+      "projectUniqueName": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Common\\Intillegio.Common.csproj",
       "projectName": "Intillegio.Common",
-      "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Common\\Intillegio.Common.csproj",
+      "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Common\\Intillegio.Common.csproj",
       "packagesPath": "C:\\Users\\Google\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio\\Intillegio.Common\\obj\\",
+      "outputPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
