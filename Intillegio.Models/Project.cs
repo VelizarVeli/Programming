@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Intillegio.Common;
+using Intillegio.Models.Constants;
 
 namespace Intillegio.Models
 {
@@ -23,13 +23,14 @@ namespace Intillegio.Models
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
-        public Status Status { get; set; }
+        public Stage Stage { get; set; }
 
         public Guid ClientId { get; set; }
         public virtual Client Client { get; set; }
 
         public DateTime StartingDate { get; set; }
 
+        [Required]
         public string Image { get; set; }
 
         //TODO: Add related projects

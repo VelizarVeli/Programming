@@ -1,7 +1,11 @@
-﻿using Intillegio.Data.Data;
+﻿using AutoMapper;
+using Intillegio.Data.Data;
 using Intillegio.Models;
+using Intillegio.Services;
+using Intillegio.Services.Contracts;
 using Intillegio.Services.Emails;
 using Intillegio.Services.Emails.Contracts;
+using Intillegio.Services.Mapping;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -46,6 +50,14 @@ namespace Intillegio.Web
                 .AddEntityFrameworkStores<IntillegioContext>()
                 .AddDefaultTokenProviders();
 
+            RegisterGlobalServices(services);
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -76,6 +88,11 @@ namespace Intillegio.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        private void RegisterGlobalServices(IServiceCollection services)
+        {
+            services.AddScoped<IProjectsService, ProjectsService>();
         }
     }
 }

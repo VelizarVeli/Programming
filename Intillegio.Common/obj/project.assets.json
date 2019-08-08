@@ -216,6 +216,16 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
+      },
+      "Intillegio.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/Intillegio.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intillegio.Models.dll": {}
+        }
       }
     }
   },
@@ -777,10 +787,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Intillegio.Models/1.0.0": {
+      "type": "project",
+      "path": "../Intillegio.Models/Intillegio.Models.csproj",
+      "msbuildProject": "../Intillegio.Models/Intillegio.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Intillegio.Models >= 1.0.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "System.ComponentModel.Annotations >= 4.5.0"
     ]
@@ -815,7 +831,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Models\\Intillegio.Models.csproj": {
+              "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Models\\Intillegio.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

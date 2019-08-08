@@ -13,6 +13,9 @@ namespace Intillegio.Data.Data
 
         public DbSet<Client> Clients { get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<ProjectFeatures> ProjectFeatures { get; set; }
+        public DbSet<Feature> Features { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

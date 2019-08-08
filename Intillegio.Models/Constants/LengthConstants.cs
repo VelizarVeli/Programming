@@ -1,4 +1,4 @@
-﻿namespace Intillegio.Common
+﻿namespace Intillegio.Models.Constants
 {
     public class LengthConstants
     {

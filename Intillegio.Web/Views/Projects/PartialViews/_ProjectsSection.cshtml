@@ -1,82 +1,26 @@
-﻿<div class="section-block">
+﻿@model List<Intillegio.Common.ViewModels.LastProjectsViewModel>
+<div class="section-block">
     <div class="container">
         <div class="section-heading">
             <h4>Latest Projects</h4>
             <div class="section-heading-line-left"></div>
         </div>
         <div class="row mt-30">
-            <div class="col-md-4 col-sm-6 col-12">
-                <div class="project-grid">
-                    <div class="project-grid-img">
-                        <img src="http://via.placeholder.com/350x350" alt="img">
-                    </div>
-                    <div class="project-grid-overlay">
-                        <h4><a href="#">Strategic Option</a></h4>
-                        <p>Opportunity Costs</p>
-                        <span>Complete</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12">
-                <div class="project-grid">
-                    <div class="project-grid-img">
-                        <img src="http://via.placeholder.com/350x350" alt="img">
-                    </div>
-                    <div class="project-grid-overlay">
-                        <h4><a href="#">Cash Statement</a></h4>
-                        <p>Business Solutions</p>
-                        <span>In Process</span>
+            @foreach (var model1 in Model)
+            {
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="project-grid">
+                        <div class="project-grid-img">
+                            <img src="@model1.Image" alt="img">
+                        </div>
+                        <div class="project-grid-overlay">
+                            <h4><a href="#">@model1.Name</a></h4>
+                            <p>@model1].Category.Name</p>
+                            <span>@model1.Stage.ToString()</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12">
-                <div class="project-grid">
-                    <div class="project-grid-img">
-                        <img src="http://via.placeholder.com/350x350" alt="img">
-                    </div>
-                    <div class="project-grid-overlay">
-                        <h4><a href="#">Financial Metrics</a></h4>
-                        <p>Opportunity Costs</p>
-                        <span>In Process</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12">
-                <div class="project-grid">
-                    <div class="project-grid-img">
-                        <img src="http://via.placeholder.com/350x350" alt="img">
-                    </div>
-                    <div class="project-grid-overlay">
-                        <h4><a href="#">Business Drivers</a></h4>
-                        <p>Financial Risk</p>
-                        <span>Complete</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12">
-                <div class="project-grid">
-                    <div class="project-grid-img">
-                        <img src="http://via.placeholder.com/350x350" alt="img">
-                    </div>
-                    <div class="project-grid-overlay">
-                        <h4><a href="#">Business Plan</a></h4>
-                        <p>Marketing Strategy</p>
-                        <span>Upcomming</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12">
-                <div class="project-grid">
-                    <div class="project-grid-img">
-                        <img src="http://via.placeholder.com/350x350" alt="img">
-                    </div>
-                    <div class="project-grid-overlay">
-                        <h4><a href="#">Planning fallacy</a></h4>
-                        <p>Business Planning</p>
-                        <span>Complete</span>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>

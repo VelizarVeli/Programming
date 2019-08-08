@@ -16,3 +16,10 @@ C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.AssemblyInfo.cs
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.dll
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Common.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Data.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Models.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Common.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Data.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\bin\Debug\netcoreapp2.2\Intillegio.Models.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Services\obj\Debug\netcoreapp2.2\Intillegio.Services.csproj.CopyComplete

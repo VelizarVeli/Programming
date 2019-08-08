@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "AutoMapper/8.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
       "Font.Awesome/5.10.0": {
         "type": "package"
       },
@@ -4902,6 +4915,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "Intillegio.Models": "1.0.0",
           "System.ComponentModel.Annotations": "4.5.0"
         },
         "compile": {
@@ -4916,6 +4930,7 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Intillegio.Models": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
@@ -4931,9 +4946,6 @@
       "Intillegio.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "Intillegio.Common": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Intillegio.Models.dll": {}
         },
@@ -4945,6 +4957,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "AutoMapper": "8.1.1",
+          "Intillegio.Common": "1.0.0",
+          "Intillegio.Data": "1.0.0",
           "MailKit": "2.2.0"
         },
         "compile": {
@@ -4957,6 +4972,23 @@
     }
   },
   "libraries": {
+    "AutoMapper/8.1.1": {
+      "sha512": "GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
+      "type": "package",
+      "path": "automapper/8.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.8.1.1.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net461/AutoMapper.dll",
+        "lib/net461/AutoMapper.pdb",
+        "lib/net461/AutoMapper.xml",
+        "lib/netstandard2.0/AutoMapper.dll",
+        "lib/netstandard2.0/AutoMapper.pdb",
+        "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
     "Font.Awesome/5.10.0": {
       "sha512": "9HRPrPDQue2G98U57lIZsmSIZVBV/0kjalvo+5hJWxN9PhhzAux9qHWpjUQuderbNpktqJegXGZEGeXC8w4a3Q==",
       "type": "package",
@@ -13543,6 +13575,7 @@
       "Font.Awesome >= 5.10.0",
       "Intillegio.Common >= 1.0.0",
       "Intillegio.Data >= 1.0.0",
+      "Intillegio.Models >= 1.0.0",
       "Intillegio.Services >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
@@ -13586,6 +13619,9 @@
             },
             "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Data\\Intillegio.Data.csproj": {
               "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Data\\Intillegio.Data.csproj"
+            },
+            "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Models\\Intillegio.Models.csproj": {
+              "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Models\\Intillegio.Models.csproj"
             },
             "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Services\\Intillegio.Services.csproj": {
               "projectPath": "C:\\Users\\Google\\Desktop\\IntillegioМОЙ ВАРИАНТ\\Intillegio.Services\\Intillegio.Services.csproj"

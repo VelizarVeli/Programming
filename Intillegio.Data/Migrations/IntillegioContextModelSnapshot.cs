@@ -29,7 +29,7 @@ namespace Intillegio.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Intillegio.Models.Client", b =>
@@ -60,7 +60,7 @@ namespace Intillegio.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Feature");
+                    b.ToTable("Features");
                 });
 
             modelBuilder.Entity("Intillegio.Models.IntillegioUser", b =>
@@ -124,7 +124,8 @@ namespace Intillegio.Data.Migrations
 
                     b.Property<Guid>("ClientId");
 
-                    b.Property<string>("Image");
+                    b.Property<string>("Image")
+                        .IsRequired();
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -135,9 +136,9 @@ namespace Intillegio.Data.Migrations
                     b.Property<string>("ProjectInfo")
                         .IsRequired();
 
-                    b.Property<DateTime>("StartingDate");
+                    b.Property<int>("Stage");
 
-                    b.Property<int>("Status");
+                    b.Property<DateTime>("StartingDate");
 
                     b.HasKey("Id");
 
@@ -162,7 +163,7 @@ namespace Intillegio.Data.Migrations
 
                     b.HasIndex("FeatureId");
 
-                    b.ToTable("ProjectFeatures");
+                    b.ToTable("ProjectFeatureses");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

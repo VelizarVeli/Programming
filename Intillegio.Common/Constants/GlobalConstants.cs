@@ -1,4 +1,4 @@
-﻿namespace Intillegio.Common
+﻿namespace Intillegio.Common.Constants
 {
     public static class GlobalConstants
     {

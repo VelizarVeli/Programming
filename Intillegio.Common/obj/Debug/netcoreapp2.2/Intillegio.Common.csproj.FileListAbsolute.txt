@@ -14,3 +14,17 @@ C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\obj\De
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.AssemblyInfo.cs
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.dll
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\System.Windows.Forms.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\Accessibility.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\System.Deployment.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\System.Windows.Forms.xml
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\Accessibility.xml
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\System.Deployment.xml
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\System.Runtime.Serialization.Formatters.Soap.xml
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.csprojAssemblyReference.cache
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\obj\Debug\netcoreapp2.2\Intillegio.Common.csproj.CopyComplete
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\Intillegio.Models.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\Intillegio.Models.pdb
+C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Common\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.xml

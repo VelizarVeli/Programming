@@ -1,6 +1,6 @@
 ﻿namespace Intillegio.Models
 {
-    public enum Status
+    public enum Stage
     {
         InProgress = 1,
         Completed,

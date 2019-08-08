@@ -23,7 +23,7 @@ namespace Intillegio.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Category",
+                name: "Categories",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -32,7 +32,7 @@ namespace Intillegio.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Category", x => x.Id);
+                    table.PrimaryKey("PK_Categories", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -50,7 +50,7 @@ namespace Intillegio.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Feature",
+                name: "Features",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -58,7 +58,7 @@ namespace Intillegio.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Feature", x => x.Id);
+                    table.PrimaryKey("PK_Features", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -115,19 +115,19 @@ namespace Intillegio.Data.Migrations
                     Name = table.Column<string>(maxLength: 100, nullable: false),
                     ProjectInfo = table.Column<string>(nullable: false),
                     CategoryId = table.Column<int>(nullable: false),
-                    Status = table.Column<int>(nullable: false),
+                    Stage = table.Column<int>(nullable: false),
                     ClientId = table.Column<Guid>(nullable: false),
                     StartingDate = table.Column<DateTime>(nullable: false),
-                    Image = table.Column<string>(nullable: true),
+                    Image = table.Column<string>(nullable: false),
                     ProjectId = table.Column<Guid>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Projects", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Projects_Category_CategoryId",
+                        name: "FK_Projects_Categories_CategoryId",
                         column: x => x.CategoryId,
-                        principalTable: "Category",
+                        principalTable: "Categories",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -230,7 +230,7 @@ namespace Intillegio.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ProjectFeatures",
+                name: "ProjectFeatureses",
                 columns: table => new
                 {
                     ProjectId = table.Column<Guid>(nullable: false),
@@ -239,15 +239,15 @@ namespace Intillegio.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProjectFeatures", x => new { x.ProjectId, x.FeatureId });
+                    table.PrimaryKey("PK_ProjectFeatureses", x => new { x.ProjectId, x.FeatureId });
                     table.ForeignKey(
-                        name: "FK_ProjectFeatures_Feature_FeatureId",
+                        name: "FK_ProjectFeatureses_Features_FeatureId",
                         column: x => x.FeatureId,
-                        principalTable: "Feature",
+                        principalTable: "Features",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_ProjectFeatures_Projects_ProjectId",
+                        name: "FK_ProjectFeatureses_Projects_ProjectId",
                         column: x => x.ProjectId,
                         principalTable: "Projects",
                         principalColumn: "Id",
@@ -282,8 +282,8 @@ namespace Intillegio.Data.Migrations
                 column: "RoleId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProjectFeatures_FeatureId",
-                table: "ProjectFeatures",
+                name: "IX_ProjectFeatureses_FeatureId",
+                table: "ProjectFeatureses",
                 column: "FeatureId");
 
             migrationBuilder.CreateIndex(
@@ -332,7 +332,7 @@ namespace Intillegio.Data.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "ProjectFeatures");
+                name: "ProjectFeatureses");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -341,13 +341,13 @@ namespace Intillegio.Data.Migrations
                 name: "User");
 
             migrationBuilder.DropTable(
-                name: "Feature");
+                name: "Features");
 
             migrationBuilder.DropTable(
                 name: "Projects");
 
             migrationBuilder.DropTable(
-                name: "Category");
+                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "Clients");

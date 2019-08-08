@@ -21,6 +21,4 @@ C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Models\bin\De
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Models\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Models\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.xml
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Models\obj\Debug\netcoreapp2.2\Intillegio.Models.csproj.CopyComplete
-C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Models\bin\Debug\netcoreapp2.2\Intillegio.Common.dll
-C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Models\bin\Debug\netcoreapp2.2\Intillegio.Common.pdb
 C:\Users\Google\Desktop\IntillegioМОЙ ВАРИАНТ\Intillegio.Models\obj\Debug\netcoreapp2.2\Intillegio.Models.csprojAssemblyReference.cache
