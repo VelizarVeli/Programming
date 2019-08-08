@@ -18,22 +18,22 @@ namespace Intillegio.Services
 
         public  async Task<IEnumerable<LastProjectsViewModel>> LastProjects()
         {
-            //var lastProjects = DbContext
-            //    .Projects
-            //    .OrderByDescending(a => a.StartingDate)
-            //    .Select(a => new LastProjectsViewModel
-            //    {
-            //        Id = a.Id,
-            //        Category = a.Category,
-            //        Image = a.Image,
-            //        Name = a.Name,
-            //        Stage = a.Stage
-            //    })
-            //    .Take(6)
-            //    .ToList();
-            //await DbContext.SaveChangesAsync();
-            var lastProjects =  Mapper.Map<IEnumerable<LastProjectsViewModel>>(
-                DbContext.Projects.OrderByDescending(p => p.StartingDate).Take(6));
+            var lastProjects = DbContext
+                .Projects
+                .OrderByDescending(a => a.StartingDate)
+                .Select(a => new LastProjectsViewModel
+                {
+                    Id = a.Id,
+                    Category = a.Category.Name,
+                    Image = a.Image,
+                    Name = a.Name,
+                    Stage = a.Stage.ToString()
+                })
+                .Take(6)
+                .ToList();
+            await DbContext.SaveChangesAsync();
+            //var lastProjects =  Mapper.Map<ICollection<LastProjectsViewModel>>(
+            //    DbContext.Projects.OrderByDescending(p => p.StartingDate).Take(6));
 
             return lastProjects;
         }

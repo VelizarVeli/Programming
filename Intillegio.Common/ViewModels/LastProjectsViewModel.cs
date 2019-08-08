@@ -1,5 +1,4 @@
 ﻿using System;
-using Intillegio.Models;
 
 namespace Intillegio.Common.ViewModels
 {
@@ -11,8 +10,8 @@ namespace Intillegio.Common.ViewModels
 
         public string Name { get; set; }
 
-        public Stage Stage { get; set; }
+        public string Stage { get; set; }
 
-        public Category Category { get; set; }
+        public string Category { get; set; }
     }
 }

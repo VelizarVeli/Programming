@@ -6,17 +6,17 @@
             <div class="section-heading-line-left"></div>
         </div>
         <div class="row mt-30">
-            @foreach (var model1 in Model)
+            @foreach (var project in Model)
             {
                 <div class="col-md-4 col-sm-6 col-12">
                     <div class="project-grid">
                         <div class="project-grid-img">
-                            <img src="@model1.Image" alt="img">
+                            <img src="@project.Image" alt="img">
                         </div>
                         <div class="project-grid-overlay">
-                            <h4><a href="#">@model1.Name</a></h4>
-                            <p>@model1].Category.Name</p>
-                            <span>@model1.Stage.ToString()</span>
+                            <h4><a href="#">@project.Name</a></h4>
+                            <p>@project.Category</p>
+                            <span>@project.Stage</span>
                         </div>
                     </div>
                 </div>
